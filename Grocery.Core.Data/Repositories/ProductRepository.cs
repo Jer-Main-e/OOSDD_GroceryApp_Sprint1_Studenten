@@ -8,7 +8,7 @@ namespace Grocery.Core.Data.Repositories
         private readonly List<Product> products;
         public ProductRepository()
         {
-            //Lijst met 4 nieuwe producten geïnitieerd
+            //List with four new products initialized
             products = [
                 new Product(1, "Melk", 300),
                 new Product(2, " Kaas", 100),
@@ -17,6 +17,7 @@ namespace Grocery.Core.Data.Repositories
         }
         public List<Product> GetAll()
         {
+            //returning the products list
             return products;
         }
 
